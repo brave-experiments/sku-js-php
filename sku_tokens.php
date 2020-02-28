@@ -36,7 +36,7 @@ $location = $_POST['url'];
 
 $id = $_POST['id'];
 $amount = $_POST['amount'];
-$currency = $POST['currency'];
+$currency = $_POST['currency'];
 $description = $_POST['description'];
 $expiry = $_POST['expiry'];
 
