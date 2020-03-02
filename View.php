@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/bat.js"></script>
   </head>
 
   <body>
@@ -69,7 +70,7 @@
                 <input type="radio" name="sizes" id="pound" />
                 <label for="pound">1 pound</label>
 
-                <button>
+                <button onclick="showPaymentUI('<?php echo $m->serialize() ?>')">
                   <strong>Buy</strong>
                   <span class="divider">|</span>
                   <strong>$10.00</strong>
