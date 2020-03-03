@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/bat.js"></script>
+    <script src="./lib/js/sku-lib.js"></script>
   </head>
 
   <body>
@@ -70,7 +70,7 @@
                 <input type="radio" name="sizes" id="pound" />
                 <label for="pound">1 pound</label>
 
-                <button onclick="showPaymentUI('<?php echo $m->serialize() ?>')">
+                <button onclick="buildPaymentRequestAndShowPaymentUI({}, '<?php echo $m->serialize() ?>', 'Coffee - Ethiopia Bensa Bombe', '45', 'BAT');">
                   <strong>Buy</strong>
                   <span class="divider">|</span>
                   <strong>$10.00</strong>
