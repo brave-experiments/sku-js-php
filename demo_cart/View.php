@@ -13,8 +13,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/index.css" />
-    <script src="./lib/js/sku-lib.js"></script>
+    <link rel="stylesheet" href="./../css/index.css" />
+    <script src="../lib/js/sku-lib.js"></script>
   </head>
 
   <body>
@@ -57,30 +57,16 @@
 
             <div class="sizes">
               <div>
-                <input type="radio" name="sizes" checked id="12" />
-                <label for="12">12 ounces</label>
-                <input type="hidden" name="sku_token" value="<?php echo $m->serialize() ?>">
-
-                <span style="color: red;">
-                  Button should be inserted here based on the hidden name above called "sku_token".
-                </span>
+                <input class="bat-sku-item" type="checkbox" name="<?php echo $m_12oz->serialize() ?>;10" id="pound" />
+		<label for="12">12 ounces</label>
               </div>
 
               <div>
-                <input type="radio" name="sizes" id="pound" />
+                <input class="bat-sku-item" type="checkbox" name="<?php echo $m_1lb->serialize() ?>; 15" id="pound" />
                 <label for="pound">1 pound</label>
+	      </div>
 
-                <button onclick="buildPaymentRequestAndShowPaymentUI({}, '<?php echo $m->serialize() ?>', 'Coffee - Ethiopia Bensa Bombe', '45', 'BAT');">
-                  <strong>Buy</strong>
-                  <span class="divider">|</span>
-                  <strong>$10.00</strong>
-                  <img src="./img/bat.png" />
-                  <span>
-                    45.0 BAT
-                  </span>
-                </button>
-
-              </div>
+              <div id='bat-sku-total'></div>
 
             </div>
           </div>
