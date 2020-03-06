@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./../css/index.css" />
+    <script src="../lib/js/macaroons.js"></script>
     <script src="../lib/js/sku-lib.js"></script>
   </head>
 
@@ -57,12 +58,12 @@
 
             <div class="sizes">
               <div>
-                <input class="bat-sku-item" type="checkbox" name="<?php echo $m_12oz->serialize() ?>;10" id="pound" />
+                <input class="bat-sku-item" type="checkbox" id="<?php echo $m_12oz->serialize() ?>" id="pound" />
 		<label for="12">12 ounces</label>
               </div>
 
               <div>
-                <input class="bat-sku-item" type="checkbox" name="<?php echo $m_1lb->serialize() ?>; 15" id="pound" />
+                <input class="bat-sku-item" type="checkbox" id="<?php echo $m_1lb->serialize() ?>" id="pound" />
                 <label for="pound">1 pound</label>
 	      </div>
 

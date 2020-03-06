@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
     <script src="../lib/js/sku-lib.js"></script>
-    <script src="../lib/js/macaroon.js"></script>
+    <script src="../lib/js/macaroons.js"></script>
   </head>
 
   <body>
