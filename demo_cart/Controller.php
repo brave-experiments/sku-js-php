@@ -16,7 +16,7 @@ class Controller {
 
      public function invoke()
      {
-	  $id = "910e2f59-4c3d-4a7e-959b-f73d68866ddd";
+          $id = "910e2f59-4c3d-4a7e-959b-f73d68866ddd";
           $amount = "45";
           $currency = "BAT";
           $description = "12 ounces of Coffee";
@@ -25,7 +25,7 @@ class Controller {
           $m_12oz = generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
 
           $id = "56a6189f-06e0-47b5-aebb-0eb17c009130";
-          $amount = "60";
+          $amount = "200";
           $currency = "BAT";
           $description = "1 pound of Coffee";
           $expiry = strtotime("+5 minutes");

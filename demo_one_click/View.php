@@ -20,7 +20,7 @@
 
   <body>
     <nav>
-      <a href="#">Shop</a>
+      <a href="../index.html">Shop</a>
     </nav>
 
     <main>

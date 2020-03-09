@@ -55,12 +55,21 @@ header {
   display: flex;
 }
 
-.sizes div {
-  background: #EDEDED;
+@media (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+
+
+.sizes > div {
+  background: #ededed;
   padding: 10px 0;
   margin-bottom: 5px;
   border-radius: 8px;
   border: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
 }
 
 .sizes input {
@@ -68,4 +77,5 @@ header {
 }
 .sizes label {
   margin-right: 10px;
+  margin-bottom: 0;
 }

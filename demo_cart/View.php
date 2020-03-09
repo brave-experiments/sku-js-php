@@ -20,7 +20,7 @@
 
   <body>
     <nav>
-      <a href="#">Shop</a>
+      <a href="../index.html">Shop</a>
     </nav>
 
     <main>
@@ -58,18 +58,31 @@
 
             <div class="sizes">
               <div>
-                <input class="bat-sku-item" type="checkbox" id="<?php echo $m_12oz->serialize() ?>" id="pound" />
-		<label for="12">12 ounces</label>
+                <label>
+                  <input
+                    class="bat-sku-item"
+                    type="checkbox"
+                    id="<?php echo $m_12oz->serialize() ?>"
+                    id="12"
+                  />
+                  12 ounces
+                </label>
               </div>
 
               <div>
-                <input class="bat-sku-item" type="checkbox" id="<?php echo $m_1lb->serialize() ?>" id="pound" />
-                <label for="pound">1 pound</label>
-	      </div>
-
-              <div id='bat-sku-total'></div>
-
+                <label>
+                  <input
+                    class="bat-sku-item"
+                    type="checkbox"
+                    id="<?php echo $m_1lb->serialize() ?>"
+                    id="pound"
+                  />
+                  1 pound
+                </label>
+              </div>
             </div>
+
+            <div id="bat-sku-total"></div>
           </div>
         </div>
       </div>
