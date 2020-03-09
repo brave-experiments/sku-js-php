@@ -40,17 +40,7 @@
           <div>
             <strong>Description</strong>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              blandit pellentesque metus, at molestie diam porttitor eleifend.
-              Aenean posuere fringilla nulla ac tincidunt. Aenean at ipsum eu
-              est laoreet luctus eget ac risus. Pellentesque non lacus quis
-              lorem semper interdum. Sed vel fringilla ante. Ut rutrum
-              condimentum ornare. Morbi bibendum felis tellus, et efficitur
-              justo venenatis vitae. Vivamus in nunc eu orci porta molestie sed
-              auctor odio. Curabitur sollicitudin auctor ligula, non scelerisque
-              ipsum convallis quis. Nulla facilisi. Sed a lectus nec justo
-              malesuada egestas nec in diam. Praesent porttitor volutpat magna.
-              Aliquam at gravida lectus, at lacinia libero.
+              Great ethiopian coffee.
             </p>
 
             <!-- Some options you could display to the users -->
