@@ -53,7 +53,6 @@
                     class="bat-sku-item"
                     type="checkbox"
                     id="<?php echo $m_12oz->serialize() ?>"
-                    id="12"
                   />
                   12 ounces
                 </label>
@@ -65,7 +64,6 @@
                     class="bat-sku-item"
                     type="checkbox"
                     id="<?php echo $m_1lb->serialize() ?>"
-                    id="pound"
                   />
                   1 pound
                 </label>
