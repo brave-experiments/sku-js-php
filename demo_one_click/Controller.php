@@ -28,7 +28,7 @@ class Controller {
         $amount = "10";
         $currency = "BAT";
         $description = "1 pound of Coffee";
-        $expiry = strtotime("+5 minutes");
+        $expiry = date(DateTime::RFC3339, strtotime("+5 minutes"));
 
         $m_1lb = generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
 
