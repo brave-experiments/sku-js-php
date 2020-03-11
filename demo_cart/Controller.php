@@ -1,12 +1,8 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
-include '../lib/php/sku-lib.php';
+require __DIR__ . '/vendor/autoload.php';
 
-use Macaroons\Utils;
-use Macaroons\Macaroon;
-use Macaroons\Packet;
-
+use Sku\Sku;
 
 class Controller {
 
@@ -22,7 +18,7 @@ class Controller {
           $description = "12 ounces of Coffee";
           $expiry = strtotime("+5 minutes");
 
-          $m_12oz = generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
+          $m_12oz = Sku::generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
 
           $id = "56a6189f-06e0-47b5-aebb-0eb17c009130";
           $amount = "10";
@@ -30,7 +26,7 @@ class Controller {
           $description = "1 pound of Coffee";
           $expiry = date(DateTime::RFC3339, strtotime("+5 minutes"));
 
-          $m_1lb = generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
+          $m_1lb = Sku::generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
           include 'View.php';
      }
 }
