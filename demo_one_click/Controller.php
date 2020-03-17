@@ -6,10 +6,6 @@ use Sku\Sku;
 
 class Controller {
 
-    // This will be given to you from Brave
-    const IDENTIFIER = "pk_Cxj0FUk0SmZGxFN";
-    const SECRET = "sk_IOwQHMd7APmZtx1";
-
     public function invoke()
     {
         $id = "910e2f59-4c3d-4a7e-959b-f73d68866ddd";
@@ -18,7 +14,7 @@ class Controller {
         $description = "12 ounces of Coffee";
         $expiry = strtotime("+5 minutes");
 
-        $m_12oz = Sku::generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
+        $m_12oz = Sku::generateSKUToken($_ENV['SKU_SECRET'], $id, $amount, $currency, $description, $expiry);
 
         $id = "56a6189f-06e0-47b5-aebb-0eb17c009130";
         $amount = "10";
@@ -26,7 +22,7 @@ class Controller {
         $description = "1 pound of Coffee";
         $expiry = date(DateTime::RFC3339, strtotime("+5 minutes"));
 
-        $m_1lb = Sku::generateSKUToken(self::IDENTIFIER, self::SECRET, $id, $amount, $currency, $description, $expiry);
+        $m_1lb = Sku::generateSKUToken($_ENV['SKU_SECRET'], $id, $amount, $currency, $description, $expiry);
 
         include 'View.php';
     }
