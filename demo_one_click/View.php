@@ -15,7 +15,11 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
     <script src="../lib/js/sku-lib.js"></script>
-    <script src="../lib/js/macaroons.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        BraveSKU.init()
+      });
+    </script>
   </head>
 
   <body>
