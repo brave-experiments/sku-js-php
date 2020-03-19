@@ -1,7 +1,10 @@
 {
   "name": "sku",
   "version": "1.0.0",
-  "dependencies": {},
+  "license": "MPL-2.0",
+  "dependencies": {
+    "browserify": "^16.5.0"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
@@ -11,6 +14,7 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "scripts": {
-    "lint": "eslint lib/js/*.js --fix"
+    "lint": "eslint lib/js/macaroons.js --fix && eslint lib/js/sku.js --fix",
+    "build": "browserify lib/js/sku.js --standalone BraveSKU > lib/js/sku-lib.js"
   }
 }
