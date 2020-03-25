@@ -41,12 +41,12 @@ The JS library adds an onload handler which parses the SKU tokens embedded in th
 ## Workflow
 
 1. Integrate sku libraries in your code.
-2. Fetch the `SECRET` from the publisher dashboard.
-2. Add the [`SECRET`](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L17) to your server side code. The secret should be stored securely. Do not include this directly in your server side code.
-3. Generate sku tokens for each item. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L25)
-4. Embed the `sku_tokens` in the web page. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L59)
-5. Invoke `BraveSKU.init()` on the client side. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L19). Init parses the SKU tokens to add a `Buy with BAT` button which on click invokes the Payment UI.
-5. For:
+2. Fetch the `SECRET` from the publisher dashboard. This secret should be stored securely (secret vaults or environment variables) and should not be directly included in the code.
+3. Pass this [`SECRET`](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L17) to `generateSkuToken`.
+4. Generate sku tokens for each item. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L25)
+5. Embed the `sku_tokens` in the web page. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L59)
+6. Invoke `BraveSKU.init()` on the client side. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L19). Init parses the SKU tokens to add a `Buy with BAT` button which on click invokes the Payment UI.
+7. For:
     * **One-click workflow**: Embed the token with class name [bat-sku-one-click](https://github.com/brave-experiments/sku-js-php/blob/master/demo_one_click/View.php#L53). Once the JS library sees a `div` with this id. It parses the token to add a button which if clicked displays the Payment UI.
     * **Add-to-cart workflow**: Embed token for each item with [bat-sku-item](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L65). Once the JS library sees this class it adds an onclick handler which adds or removes the item from the cart. To show the total and display the Payment UI the code needs an additional `div` with class name [bat-sku-total](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L75) which adds a `Buy with BAT` button that updates the total dynamically as items are added/removed from the list. 
 
