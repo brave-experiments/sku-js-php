@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src https://test-sku-store.bravesoftware.com">
 
     <title>A simple storefront</title>
 
@@ -15,11 +16,7 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
     <script src="../lib/js/sku-lib.js"></script>
-    <script>
-      window.addEventListener('DOMContentLoaded', function() {
-        BraveSKU.init()
-      });
-    </script>
+    <script src="/js/init.js"></script>
   </head>
 
   <body>
