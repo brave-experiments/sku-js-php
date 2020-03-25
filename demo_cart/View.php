@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Security-Policy" content="script-src https://test-sku-store.bravesoftware.com">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
 
     <title>A simple storefront</title>
 
