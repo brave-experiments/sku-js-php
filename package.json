@@ -16,8 +16,8 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "scripts": {
-    "lint": "eslint lib/js/macaroons.js --fix && eslint lib/js/sku.js --fix",
-    "build": "browserify lib/js/sku.js --standalone BraveSKU > lib/js/sku-lib.js",
+    "lint": "eslint test/*.js --fix && eslint lib/js/src/*.js --fix",
+    "build": "browserify lib/js/src/sku.js --standalone BraveSKU > lib/js/sku-lib.js",
     "test": "mocha"
   }
 }
