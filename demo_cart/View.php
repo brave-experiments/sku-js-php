@@ -70,8 +70,9 @@
                 </label>
               </div>
             </div>
-
             <div id="bat-sku-total"></div>
+            <br>
+            <div id="status"></div>
           </div>
         </div>
       </div>

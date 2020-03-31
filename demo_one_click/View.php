@@ -61,6 +61,8 @@
               </div>
 
             </div>
+            <br>
+            <div id="status"></div>
           </div>
         </div>
       </div>
