@@ -1,5 +1,5 @@
 {
     "require": {
-        "brave-experiments/sku-php": "^0.2.0"
+        "brave-experiments/sku-php": "^0.3.0"
     }
 }
