@@ -70,8 +70,10 @@
                 </label>
               </div>
             </div>
-
             <div id="bat-sku-total"></div>
+            <br>
+            <div id="sku-payment-status"></div>
+            <div id="sku-payment-message"></div>
           </div>
         </div>
       </div>
