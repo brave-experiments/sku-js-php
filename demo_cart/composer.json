@@ -1,5 +1,12 @@
 {
+    "scripts": {
+        "lint": "php-cs-fixer fix --using-cache=no --config=config.php_cs"
+    },
     "require": {
-        "brave-experiments/sku-php": "^0.3.0"
+        "brave-experiments/sku-php": "^0.4.0",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16"
     }
 }
