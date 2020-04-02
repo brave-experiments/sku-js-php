@@ -43,9 +43,11 @@ To integrate the JS library add this bundled [JS library](https://github.com/bra
 ## Using the reference implementation
 
 1. Clone the repo
-2. Copy `.env_example` to `.env` and update the values for `SECRET` and `PAYMENT_HOST`. You can find the `SECRET` in your [publisher dashboard](publishers.brave.com) and `PAYMENT_HOST` can be set to `grant.rewards.brave.software`.
-3. Run `composer install`. If you don't have privileges to run composer install in your hosting environment, you can run it locally and copy the `vendor/` folder to your remote server.
+2. Copy `.env_example` in `demo_cart` and `demo_one_click` to `.env` and update the values for `SECRET` and `PAYMENT_HOST`. You can find the `SECRET` in your [publisher dashboard](publishers.brave.com) and set the `PAYMENT_HOST` to `grant.rewards.brave.software`.
+3. Run `composer install` in `demo_cart` and `demo_one_click`. If you don't have privileges to run composer install in your hosting environment, you can run it locally and copy the `vendor/` folder to the corresponding directories your remote server.
  
+ You're all set.
+
 ## FAQ
 
  1. Do the SKU Tokens need to be generated on every page load?  
