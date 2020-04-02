@@ -6,7 +6,7 @@ To integrate the Pay with BAT and SKU workflow on your site first sign-up on [pu
 
 ## Prerequisites 
 
-* Server with bare-metal PHP
+* Server with bare-metal PHP v7.4
 
 ## PHP library
 
@@ -40,7 +40,13 @@ To integrate the JS library add this bundled [JS library](https://github.com/bra
     * **Add-to-cart workflow**: Embed token for each item with [bat-sku-item](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L54). Once the JS library sees this class it adds an onclick handler which adds or removes the item from the cart. To show the total and display the Payment UI the code needs an additional `div` with id [bat-sku-total](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L73) which adds a `Buy with BAT` button that updates the total dynamically as items are added/removed from the list.
 10. Once the `PaymentResponse` is received the `orderId` from the `PaymentResponse` is passed to [`validateOrderStatus`](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L37) to confirm if the Payment was successful.
 
- ## FAQ
+## Using the reference implementation
+
+1. Clone the repo
+2. Copy `.env_example` to `.env` and update the values for `SECRET` and `PAYMENT_HOST`. You can find the `SECRET` in your [publisher dashboard](publishers.brave.com) and `PAYMENT_HOST` can be set to `grant.rewards.brave.software`.
+3. Run `composer install`. If you don't have privileges to run composer install in your hosting environment, you can run it locally and copy the `vendor/` folder to your remote server.
+ 
+## FAQ
 
  1. Do the SKU Tokens need to be generated on every page load?  
     SKU Tokens have an associated expiry time. If the SKU tokens are generated with a long expiry time, it is possible to re-use the tokens to purchase the item for an expired price.
