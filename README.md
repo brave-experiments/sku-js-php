@@ -32,7 +32,7 @@ To integrate the JS library add this bundled [JS library](https://github.com/bra
 3. Fetch the `SECRET` from the publisher dashboard. This secret should be stored securely (secret vaults or environment variables) and should not be directly included in the code. In the reference implementation, the secrets are stored as environment variables which are parsed by [`dotenv`](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/.env_example). Rename the `.env_example` to `.env` for the reference implementation.
 4. Set the `PAYMENT_HOST` to `grant.rewards.brave.software` in `.env`
 5. Pass this [`SECRET`](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L23) to `generateSkuToken`.
-6. Generate `sku_tokens` for each item. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L31)
+6. Generate a `SKU_token` for each item. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/Controller.php#L31)
 7. Embed the `sku_tokens` in the web page. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/View.php#L56)
 8. Invoke `BraveSKU.init()` on the client side after the page is loaded. See sample code [here](https://github.com/brave-experiments/sku-js-php/blob/master/demo_cart/js/init.js#L2). Init parses the SKU tokens to add a `Buy with BAT` button which on click invokes the Payment UI.
 9. For:
