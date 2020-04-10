@@ -7,7 +7,7 @@ This project allows merchants to integrate "Pay with BAT" on their website. The 
 ## Prerequisites 
 
 * Server with bare-metal PHP v7.4
-* Composer 
+* Composer: Composer is a dependency management tool for PHP. Installation instructions are [available here](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos).
 
 ## PHP library
 
