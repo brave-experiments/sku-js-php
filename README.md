@@ -7,6 +7,7 @@ To integrate the Pay with BAT and SKU workflow on your site first sign-up on [pu
 ## Prerequisites 
 
 * Server with bare-metal PHP v7.4
+* Composer 
 
 ## PHP library
 
